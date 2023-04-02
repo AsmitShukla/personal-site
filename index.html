@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asmit Shukla</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <!-- HERE WE ARE LEARNING HOW TO USE FAVICONS TO GIVE A TITLE ICON TO OUR SITE -->
+    <!-- GO TO FAVICON.CC TO GET A FAVICON FOR YOURSELF -->
+    <link rel="icon" href="images/Untitled design.png">
+    <!-- THE ABOVE CODE ADDS OUR FAVICON TO OUR SITE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- DIV IS A SPECIAL HTML ELEMENT TO DIVIDE OUR CONTENT SO THAT WE CAN STRUCTURE OUR WEBSITE -->
+    <!-- DIVS OUR USEFULL WITH CSS ONLY -->
+
+    <div class="topcontainer">
+        <img class="top-cloud" src="images/cloud.png" alt="cloud-image">
+        <!-- EACH AND EVERY TAG IN HTML IS EITHER BLOCK DISPLAY(WHICH TAKE WHOLE HORIZONTAL SCREEN)
+    COMMON BLOCKS 1)p tag 2)h tag 3)div tag 4)lists 5)forms -->
+        <!-- these block elements block any other element in a horizontal line to them -->
+        <!-- BUT CONSIDER A SCENARIO WHERE WE ONLY NEED TO STYLE A PARTICULAR WORD DIFFERENTLY IN TWO OR MORE WAYS, BUT KEEPING THE ENTIRE WORD INTACT AS BEFORE????? -->
+        <!-- FOR THE ABOVE SCENARIO, WE HAVE A SPAN TAG(NON BLOCKING TAG)(INLINE DISPLAY ELEMENT) -->
+        <!-- SOME COMMON INLINE ELEMENTS ARE 1)span 2)img 3)anchors(a) -->
+        <h1 id="my-name">I'm Asmit.</h1>
+        <!-- WE CAN CHANGE ANY ELEMENT TO INLINE/BLOCK BY USING DISPLAY  -->
+        <!-- WE HAVE TO CHANGE ALL ELEMENTS TO INLINE BLOCK AS WE WILL THEN BE ABLE TO CHANGE ITS WIDTH/HEIGHT AND THEY WILL ALSO BE IN A SINGLE LINE -->
+        <h2>a  <span class="pro">pro</span>grammer</h2>
+        <img class="bottom-cloud" src="images/cloud.png" alt="cloud-image">
+        <!-- TO MAKE AN ELEMENT INVISIBLE IN ITS PLACE, MAKE USE OF VISIBILITY TAGS -->
+        <img src="images/mountain.png" alt="mountain-image">
+        <!-- h1 and p here are grouped together which can be styled in together -->
+    </div>
+    <!-- EVEN IF WE SPECIFY THE HEIGHT OF OUR DIV AS 0, IT WILL STILL HAVE THE HEIGHT OF THE CONTENT IT HOLDS -->
+    <!-- TO SEPERATE OUR TEXT FROM THE BORDERS IN OUR DIV TAG, WE CAN GIVE SOME PADDING 'by giving the padding property in css' eg padding:20 px PADDING INCREASES THE SIZE OF OUR BOX -->
+    <!-- MARGINS GIVE SPACE IN BETWEEN OF OTHER ELEMENTS, IT IS THE OUTERMOST AREA OF A BOX MODEL, ITS LIKE content->padding->border->margin  -->
+    <!-- WIDTH AND HEIGHT CAN ALSO BE CHANGED IN CSS OR HTML -->
+    <!-- <div class="middlecontainer"> -->
+    <!-- </div> -->
+    <!-- RULES FOR CSS POSITIONING -->
+    <!-- 1) CONTENT IS EVERYTHING (WIDTH/HEIGHT IS DECIDED BY THE CONTENT) -->
+    <!-- 2) ORDER COMES FROM CODE -->
+    <!-- 3)CHILDREN(tags inside a tag) SIT ON PARENTS (EXAMPLE, H1 INSIDE A DIV IS DISPLAYED ON TOP(Z AXIS 3D) OF THE DIV)  -->
+    <!-- 4) (very imp!!!!)USE POSITION(static,relative,absolute,fixed) CSS PROPERTY TO POSITION ELEMENTS ON SCREEN -->
+    <!-- <div class="bottomcontainer"> -->
+        <!-- MOVING AN IMAGE USING position :relative -->
+        <!-- USE top :20px :- it moves the image down by 20px -->
+        <!-- USE left :20px :- it moves the image rright by 20px -->
+        <!-- USE right :20px :- it moves the image left by 20px -->
+        <!-- USE bottom :20px :- it moves the image up by 20px -->
+        <!-- !!MOVING AN IMAGE/ELEMENT ANYWHERE, DOESNT MOVE THE OTHER ELEMENT(it overlaps the moved image on the new element)!! -->
+    <!-- </div> -->
+    <!-- PADDING ONLY PADS THE CONTENT INSIDE THE DIV AND NOT THE BACKGROUND IMAGE OR BACKGROUND COLOR -->
+    <!-- IMP NOTE -->
+    <!-- IN ABOSOLUTE POSITIONING, WHEN THERE IS AN ELEMENT INSIDE OF AN ELEMENT AND THE POSITION OF THE INNER ATTRIBUTE IS SET AS ABSOLUTE, WHILE THAT OF THE PARENT IS RELATIVE -->
+    <!-- THEN IF WE GIVE right:30px; for the chil element, then it shifts the child right such that it is 30px distance in the right from the parent, instead of just shifting it to left by 30 px -->
+    <!-- ABSOLUTE POSITIONING IS USED TO POSITION ELEMENTS 'PIXEL PERFECT' -->
+    <!-- FIXED POSITIONING IS USED TO FIX SOMETHING ON SCREEN WHEN SOMEONE SCROLLS DOWN IN OUR WEBSITE -->
+    <div class="middle-container">
+        <div class="profile">
+          <img id="myph" src="images/myphoto.png" alt="My profile photo" width="200" height="200">
+          <h2>Hello.</h2>
+          <p class="intro">This is Asmit Shukla Welcome to my website☺️</p>
+        </div>
+        <hr>
+        <div class="skills">
+          <h2>My Skills.</h2>
+          <div class="skill-row">
+            <img class="skills-img1" src="images/data-structure.png" alt="image cant be displayed">
+            <h3>DATA STRUCTURES AND ALGORITHMS</h3>
+            <p>I am a DSA Enthusiast and love problem solving via C++, I am a 5⭐ Coder at <a id="Hkr" target="_blank" href="https://www.hackerrank.com/shuklaasmit40">HackerRank </a> and a  1⭐ Coder at <a id="CD" target="_blank" href="https://www.codechef.com/users/asmit_007">CodeChef</a> I am not the best one out there, but am surely trying to do my best and give my 100% to the thing I love the most.😁</p>
+          </div>
+          <div class="skill-row">
+            <img class="skills-img2" src="images/development.png" alt="image cant be displayed">
+            <h3>FRONTEND DEVELOPER</h3>
+            <p>I have successfully learned HTML and have previously designed a cv website using pure HTML syntaxes , I have also learned about CSS and styling of the websites using CSS and its properties. Web development always mesmerizes me in some way or the other which is one among the reasons that I like it so much.😁</p>
+          </div>
+        </div>
+        <hr>
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          <h3>Here are the links to all the social media accounts that I have.</h3>
+          <p class="contact-message">For any website related querrys and suggestions, kindly send a mail to the below stated website</p>
+          <a class="btn" href="mailto:shuklaasmit40@email.com">CONTACT ME</a>
+        </div>
+      </div>
+      
+      
+      <div class="bottom-container">
+        <a class="footer-link" target="_blank" href="https://www.linkedin.com/in/asmit-shukla-8b2870245/">LinkedIn</a>
+        <a class="footer-link" target="_blank" href="https://twitter.com/">Twitter</a>
+        <a class="footer-link" target="_blank" href="http://127.0.0.1:5500/Web%20development/CSS-My%20site/index.html">Website</a>
+        <p class="copyright">© Asmit Shukla</p>
+      </div>
+      
+</body>
+
+</html>
